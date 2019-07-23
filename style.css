@@ -169,8 +169,18 @@ body{
         background-color: rgb(185, 197, 131);
     }
 }
+
+.intro{
+    margin-top: 250px;
+}
+
 .intro__banner{
-    width: 98vw;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    width: 100vw;
+    height: 400px;
+    z-index: -100;
 }
 .intro__p{
     font-size: 50px;
@@ -178,7 +188,9 @@ body{
     text-align: center;
     color: rgb(37, 6, 58);
 }
-
+.intro__hr{
+        margin-top: 250px;
+}
 .intro__hr, .ending__hr{
     border-color: black;
     padding-top: 1px;
