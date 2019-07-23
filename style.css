@@ -367,10 +367,24 @@ body{
     align-items: center;
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { /* iphones */
+    .header{
+        .footer__notes{
+            grid-column: 1/7;
+        }
+    }
 
-.footer__notes{
-    grid-column: 5/7;
-}
+    @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+        .footer__notes{
+            grid-column: 5/7;
+        }
+  }
 .footer__social{
     grid-column: 7/10;
     display: grid;
