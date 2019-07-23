@@ -3,263 +3,266 @@ body{
     background-color: rgb(151, 170, 68);
 }
 
-@media only screen /* iphone 6, 7, etc.*/ 
-  and (max-device-width: 700px) 
-  { 
-      background-color: red;
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
 }
 
-@media screen /* laptops and whatnot */
-  and (min-device-width: 1200px)  
-  { 
-    .header{
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        background-color: rgb(192, 255, 224);
-    }
-    .header__container{
-        display: grid;
-        grid-template-columns: repeat(10, 9.9vw);
-        grid-template-rows: 100px;
-        align-items: center;
-    }
-    .header__block{
-        height: 100px;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .header__block--icon{
-        grid-column: 1/2;
-    }
-    .header__block--title{
-        justify-content: left;
-        grid-column: 2/5;
-        color: rgb(78, 36, 105);
-    }
-    
-    .header__block1{
-        grid-column: 7/8;
-    }
-    .header__block2{
-        grid-column: 8/9;
-    }
-    .header__block3{
-        grid-column: 9/10;
-    }
-    .header__block4{
-        grid-column: 10/11;
-    }
-    
-    
-    @keyframes header__a--animation{
-        0%{
-            color: red;
-            background-color: rgb(151, 170, 68);
-        }
-    
-        100%{
-            color: blue;
-            background-color: rgb(185, 197, 131);
-        }
-    }
-    .header__a {
-        text-decoration: none;
-        color: black;
-        font-size: 25px;
-    }
-    .header__a:hover{
-        animation-name: header__a--animation;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;  
-        /*background-color: rgb(27, 129, 189); */
-    }
-    .header__icon{
-        height: 100px;
-        width: 100px;
-    }
-    .header__title{
-        font-size: 25px;
-        text-align: center;
-        height: auto;
-        font-weight: 1000;
-    }
-    .intro{
-        margin-top: 100px;
-    }
-    .intro__banner{
-        width: 100vw;
-        margin-left: -10px;
-    }
-    .intro__p{
-        font-size: 50px;
-        font-weight: 800;
-        text-align: center;
-        color: rgb(37, 6, 58);
-    }
-    
-    .intro__hr, .ending__hr{
-        border-color: black;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        background-color: rgb(176, 104, 224);
-    }
-    @keyframes portfolio__image--animation{
-        0%{
-        }
-    
-        20%{
-            box-shadow: 0px 0px 25px rgb(5, 75, 141);
-        }
-        70%{
-            box-shadow: 0px 0px 25px rgb(5, 75, 141);
-            box-shadow: 0px 0px 50px rgb(84, 164, 240);
-        }
-        100%{
-            box-shadow: 0px 0px 25px rgb(5, 75, 141);
-            box-shadow: 0px 0px 50px rgb(84, 164, 240);
-            box-shadow: 0px 0px 100px rgb(144, 192, 236);
-        }
-    }
-    
-    .portfolio__a:hover{
-        animation-name: portfolio__image--animation;
-        animation-duration: 0.2s;
-        animation-fill-mode: forwards;
-    }
-    .portfolio__container{
-        display: grid;
-        grid-template-columns: repeat(10, 10vw);
-        grid-template-rows: repeat(2, 50vh);
-        justify-items: center;
-        align-items: center;
-    }
-    
-    .portfolio__image{
-        width: 20vw;
-        height: 20vw;
-    }
-    .portfolio__image:hover{
-        animation-name: portfolio__image--animation;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-    }
-    .portfolio__image1{
-        grid-column: 2/4;
-        grid-row:  1/2;  
-    }
-    .portfolio__image2{
-        grid-column: 5/7;
-        grid-row: 1/2;
-    }
-    .portfolio__image3{
-        grid-column: 8/10;
-        grid-row: 1/2;
-    }
-    .portfolio__image4{
-        grid-column: 2/4;
-        grid-row: 2/3;
-    }
-    .portfolio__image5{
-        grid-column: 5/7;
-        grid-row: 2/3; 
-    }
-    .portfolio__image6
-    {
-        grid-column: 8/10;
-        grid-row: 2/3;
-    }
-    .portfolio__h1{
-        color: rgb(68, 9, 107);
-        text-align: center;
-    }
-    
-    .contact__h2{
-        text-align: center; 
-        color: rgb(68, 9, 107);
-    }
-    .contact__container{
-        display: grid;
-        grid-template-columns: 100vw; 
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .contact__form{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        row-gap: 15px;
-    }
-    
-    .contact__input {
-        text-align: center;
-    }
-    
-    .contact__message{
-        width: 200px;
-        height: 100px;
-    }
-    
-    .spring--back{
-        text-align: center;
-    }
-    
-    .footer__h1{
-        text-align: center;
-    }
-    
-    .footer{
-        display: grid;
-        grid-template-columns: repeat(10, 10vw);
-        grid-template-rows: 100px;
-        background-color: rgb(192, 255, 224);
-    
-    }
-    
-    .footer__container{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    
-    .footer__notes{
-        grid-column: 5/7;
-    }
-    .footer__social{
-        grid-column: 7/10;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 50%);
-        justify-content: center;
-        align-items: center;
-    }
-    .footer__a{
-    }
-    .footer__icon{
-        width: 40px;
-        height: 40px;
-    }
-    
-    .footer__facebook{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        }
-        .footer__instagram{
-            grid-column: 2/3;
-            grid-row: 1/2;
-        }
-        .footer__twitter{
-            grid-column: 1/2;
-            grid-row: 2/3;
-        }
-        .footer__snapchat{
-            grid-column: 2/3;
-            grid-row: 2/3;
-        }
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
 }
 
 
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(192, 255, 224);
+}
+.header__container{
+    display: grid;
+    grid-template-columns: repeat(10, 9.9vw);
+    grid-template-rows: 100px;
+    align-items: center;
+}
+.header__block{
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__block--icon{
+    grid-column: 1/2;
+}
+.header__block--title{
+    justify-content: left;
+    grid-column: 2/5;
+    color: rgb(78, 36, 105);
+}
+
+.header__block1{
+    grid-column: 7/8;
+}
+.header__block2{
+    grid-column: 8/9;
+}
+.header__block3{
+    grid-column: 9/10;
+}
+.header__block4{
+    grid-column: 10/11;
+}
+
+
+@keyframes header__a--animation{
+    0%{
+        color: red;
+        background-color: rgb(151, 170, 68);
+    }
+
+    100%{
+        color: blue;
+        background-color: rgb(185, 197, 131);
+    }
+}
+.header__a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.header__a:hover{
+    animation-name: header__a--animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;  
+    /*background-color: rgb(27, 129, 189); */
+}
+.header__icon{
+    height: 100px;
+    width: 100px;
+}
+.header__title{
+    font-size: 25px;
+    text-align: center;
+    height: auto;
+    font-weight: 1000;
+}
+.intro{
+    margin-top: 100px;
+}
+.intro__banner{
+    width: 100vw;
+    margin-left: -10px;
+}
+.intro__p{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(37, 6, 58);
+}
+
+.intro__hr, .ending__hr{
+    border-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: rgb(176, 104, 224);
+}
+@keyframes portfolio__image--animation{
+    0%{
+    }
+
+    20%{
+        box-shadow: 0px 0px 25px rgb(5, 75, 141);
+    }
+    70%{
+        box-shadow: 0px 0px 25px rgb(5, 75, 141);
+        box-shadow: 0px 0px 50px rgb(84, 164, 240);
+    }
+    100%{
+        box-shadow: 0px 0px 25px rgb(5, 75, 141);
+        box-shadow: 0px 0px 50px rgb(84, 164, 240);
+        box-shadow: 0px 0px 100px rgb(144, 192, 236);
+    }
+}
+
+.portfolio__a:hover{
+    animation-name: portfolio__image--animation;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+.portfolio__container{
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(2, 50vh);
+    justify-items: center;
+    align-items: center;
+}
+
+.portfolio__image{
+    width: 20vw;
+    height: 20vw;
+}
+.portfolio__image:hover{
+    animation-name: portfolio__image--animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.portfolio__image1{
+    grid-column: 2/4;
+    grid-row:  1/2;  
+}
+.portfolio__image2{
+    grid-column: 5/7;
+    grid-row: 1/2;
+}
+.portfolio__image3{
+    grid-column: 8/10;
+    grid-row: 1/2;
+}
+.portfolio__image4{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.portfolio__image5{
+    grid-column: 5/7;
+    grid-row: 2/3; 
+}
+.portfolio__image6
+{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.portfolio__h1{
+    color: rgb(68, 9, 107);
+    text-align: center;
+}
+
+.contact__h2{
+    text-align: center; 
+    color: rgb(68, 9, 107);
+}
+.contact__container{
+    display: grid;
+    grid-template-columns: 100vw; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.contact__input {
+    text-align: center;
+}
+
+.contact__message{
+    width: 200px;
+    height: 100px;
+}
+
+.spring--back{
+    text-align: center;
+}
+
+.footer__h1{
+    text-align: center;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: 100px;
+    background-color: rgb(192, 255, 224);
+
+}
+
+.footer__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer__notes{
+    grid-column: 5/7;
+}
+.footer__social{
+    grid-column: 7/10;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+}
+.footer__a{
+}
+.footer__icon{
+    width: 40px;
+    height: 40px;
+}
+
+.footer__facebook{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    }
+    .footer__instagram{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .footer__twitter{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .footer__snapchat{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
