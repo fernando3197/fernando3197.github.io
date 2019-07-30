@@ -22,14 +22,31 @@ body{
 }
 
 .header__nav, .header__social{
-    display: flex;
+    display: grid;
+    grid-template-rows: 100px;
+    column-gap: calc(0.5px + 1.5vw);
+    z-index: 100;
+    font-size: calc(15px + 2vw);
+    justify-content: space-between;
 }
+
+.header__nav{
+    grid-template-columns: repeat(3, 33%);
+    margin-left: 10px;
+}
+
+.header__social{
+    grid-template-columns: repeat(2, 50%);
+    margin-right: 20px;
+}
+
+
 a{
     text-decoration: none;
     color: white;
 }
-.header__p{
-    font-size: cal(12px);
+.header p{
+    font-size: calc(12px+2em);
 }
 
 
@@ -53,14 +70,14 @@ a{
     height: 60vh;
     width: 100vw;
     color: white;
-    font-size: calc(12px + 2vw);
+    font-size: calc(12px + 2.5vw);
     display: grid;
     justify-content: center;
     align-content: center;
 }
 
 .body__container p, .smash__description p{
-    font-size: calc(12px + 2vw);
+    font-size: calc(10px + 2vw);
     color: white;   
     white-space: pre-line;
 }
