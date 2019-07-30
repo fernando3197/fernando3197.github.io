@@ -28,7 +28,9 @@ a{
     text-decoration: none;
     color: white;
 }
-
+.header__p{
+    font-size: cal(12px);
+}
 
 
 .introduction__image{
@@ -57,13 +59,13 @@ a{
     align-content: center;
 }
 
-p{
+.body__container p, .smash__description p{
     font-size: calc(12px + 2vw);
-    color: white;
+    color: white;   
     white-space: pre-line;
 }
 
-.introduction__container__description, .graduation__description{
+.introduction__container__description, .graduation__description, .smash__description{
     display: grid;
     grid-template-columns: 80%;
     justify-content: center;
@@ -72,9 +74,12 @@ p{
     width: 50vw;
     row-gap: auto;
 }
+.smash__image{
+    width: 50vw;
+    height: 50vw;
+}
 .introduction__container__picture{
     width: 50vw;
-    height:
 }
 
 .introduction__image2{
