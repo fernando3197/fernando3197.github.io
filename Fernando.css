@@ -58,7 +58,7 @@ a{
 }
 
 p{
-    font-size: calc(8px + 2vw);
+    font-size: calc(12px + 2vw);
     color: white;
     white-space: pre-line;
 }
@@ -74,11 +74,11 @@ p{
 }
 .introduction__container__picture{
     width: 50vw;
+    height:
 }
 
 .introduction__image2{
     width: 50vw;
-    height: 100vh;
 }
 
 .timeline__h2{
