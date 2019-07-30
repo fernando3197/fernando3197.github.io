@@ -2,7 +2,16 @@ body{
     background-color: rgb(95, 88, 88);
     overflow-x: hidden;
 }
-
+.icon{
+    z-index: 250;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 0px;
+}
+.icon__header{
+    text-align: center;
+}
 .body__container{
     position: absolute;
     display: grid;
