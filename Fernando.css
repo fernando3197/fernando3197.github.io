@@ -1,0 +1,95 @@
+body{
+    background-color: gray;
+    overflow-x: hidden;
+}
+
+.body__container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    top: 60vh;
+    left: 0px;
+    grid-template-columns: 50vw 50vw; 
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.header__nav, .header__social{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.introduction__image{
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 60vh;
+    filter: blur(2px);
+    opacity: 0.3;
+}
+
+    
+.introduction__box__h1{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    top: 0px;
+    left: 0px;
+    height: 60vh;
+    width: 100vw;
+    color: white;
+    font-size: calc(12px + 2vw);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+p{
+    font-size: calc(8px + 2vw);
+    color: white;
+    white-space: pre-line;
+}
+
+.introduction__container__description, .graduation__description{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-content: center;
+    background-color: #5985cc;
+    width: 50vw;
+    row-gap: auto;
+}
+.introduction__container__picture{
+    width: 50vw;
+}
+
+.introduction__image2{
+    width: 50vw;
+    height: 100vh;
+}
+
+.timeline__h2{
+    font-size: 30px;
+    grid-column: 1/3;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.graduation__image, .graduation__description{
+    width: 50vw;
+}
