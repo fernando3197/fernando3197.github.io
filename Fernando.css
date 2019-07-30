@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color: rgb(95, 88, 88);
     overflow-x: hidden;
 }
 
@@ -39,7 +39,7 @@ a{
     width: 100vw;
     height: 60vh;
     filter: blur(2px);
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
     
