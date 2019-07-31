@@ -112,7 +112,7 @@ a{
     width: 50vw;
 }
 
-.timeline__h2{
+.timeline__h2, .competition__h2{
     font-size: 30px;
     grid-column: 1/3;
     text-align: center;
@@ -123,4 +123,18 @@ a{
 
 .graduation__image, .graduation__description{
     width: 50vw;
+}
+
+.competition{
+    grid-column: 1/3;
+}
+
+
+
+.smash__banner{
+    grid-column: 1/3;
+}
+
+.smash__banner__image{
+    width: 100vw;
 }
